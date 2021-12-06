@@ -60,8 +60,7 @@ def generate_user(user_name):
 def create_user(user_id, user_name, address):
     address_key = get_address_key(user_id)
     new_address = {address_key: address}
-    # transaction_key = get_transaction_key(user_id)
-    # new_transaction = {transaction_key: make_transaction(user_id)}
+
     return models.User(
         user_id=get_id().get("id"),
         first_name=user_name.first_name,
