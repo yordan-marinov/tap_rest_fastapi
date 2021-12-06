@@ -7,14 +7,14 @@ import utils
 app = FastAPI()
 
 
-@app.put("/api/resource/address/add/{user_id")
+@app.post("/api/resource/address/add/{user_id")
 async def add_address(user_id: str, address: Address):
     utils.add_to_database(address, user_id)
 
     return address
 
 
-@app.get("/api/resource/address/generate/{user_id}")
+@app.post("/api/resource/address/generate/{user_id}")
 async def generate_address(user_id: str):
     address = utils.generate_address()
     utils.add_to_database(address, user_id)
@@ -30,7 +30,7 @@ async def get_all(user_id: str):
     return database.addresses[user_id]
 
 
-@app.put("/api/resource/address/{user_id}/one/{address_id}")
+@app.get("/api/resource/address/{user_id}/one/{address_id}")
 async def get_one(user_id: str, address_id: int):
     utils.validate_user_id_address_id(user_id, address_id)
 

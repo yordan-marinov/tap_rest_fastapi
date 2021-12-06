@@ -8,7 +8,7 @@ app = FastAPI()
 
 
 @app.post(f"/api/resource/create/user")
-async def create_user_with_address(user_name: models.UserName, address: models.Address, ):
+async def create_user_with_address(user_name: models.UserName, address: models.Address):
     user_id = utils.get_id().get("id")
     current_user = utils.create_user(user_id, user_name, address)
     utils.add_to_db(current_user)

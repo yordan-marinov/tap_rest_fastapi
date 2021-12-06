@@ -6,7 +6,7 @@ import database
 app = FastAPI()
 
 
-@app.get("/api/resource/transaction/generate/{user_id}")
+@app.post("/api/resource/transaction/generate/{user_id}")
 async def generate_transactions(user_id: str):
     current_transaction = utils.generate_transaction()
     utils.add_to_db(current_transaction, user_id)
