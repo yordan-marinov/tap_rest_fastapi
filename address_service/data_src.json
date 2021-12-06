@@ -1,0 +1,34 @@
+[
+    {
+        "city": [
+            "Sofia",
+            "Varna",
+            "Plovdiv",
+            "Sozopol",
+            "Nesebar",
+            "Dobrich",
+            "Kavarna",
+            "Triavna",
+            "Gabrovo",
+            "Pleven",
+            "Lovech",
+            "Svishtov",
+            "Pirdop"
+        ]
+    },
+    {
+        "street": [
+            "Chymerna",
+            "Iv. Vazov",
+            "Lazurna",
+            "Elha",
+            "Mirna",
+            "Tiha",
+            "Dunav",
+            "Glaros",
+            "Lale",
+            "Borova gora",
+            "Treti Mart"
+        ]
+    }
+]
